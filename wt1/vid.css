@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: xxx-large;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.header{
+    width: 100%;
+    background-color: transparent;
+}
+
+.header .nav-bar{
+    width: 90%;
+    height: 80px;
+    line-height: 80px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+}
+
+.header .nav-bar .logo{
+    z-index: 2;
+}
+
+.header .nav-bar .logo a{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .nav-bar .menu{
+    z-index:2;
+
+}
+
+
+.header .nav-bar .menu ul li{
+    margin-right: 30px;
+}
+
+.header .nav-bar .menu ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.8;
+    color: #fff;
+
+}
+
+.header .nav-bar .menu ul li a.active{
+    opacity: 1;
+    background-color: #000;
+    color: #fff;
+}
+
+#vid-ptr{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color:rgba(0,0,0.5);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+#my-vid{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#vid-content{
+    text-align: center;
+    color: #fff;
+    padding: 0 200px;
+}

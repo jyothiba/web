@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Services
+        </title>
+        <link rel="stylesheet" type="text/css" href="img.css">
+        <style>
+          h3,p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+          }
+        </style>
+    </head>
+    <body>
+          <section>
+            <h2 style="text-align: center;"><u>Educational Services</u> </h2>
+            <div class="slider">
+                <img src="course1.png" alt="Online Courses" width="1024" height="533">
+                <img src="online-class.jpg" alt="Tutoring Services" width="1024" height="533">
+                <img src="learn.jpg" alt="Learning Resources" width="1024" height="533">
+                <img src="career.jpg" alt="Career Guidance" width="1024" height="533">
+
+                <script>
+                    const slider = document.querySelector('.slider');
+                    const images = slider.querySelectorAll('img');
+    
+                    let currentImageIndex = 0;
+    
+                    setInterval(() => {
+                    images[currentImageIndex].classList.remove('active');
+    
+                    currentImageIndex++;
+                    if (currentImageIndex === images.length) {
+                        currentImageIndex = 0;
+                    }
+    
+                    images[currentImageIndex].classList.add('active');
+                    }, 1000);
+            </script>
+              </div>
+            <ul>
+              <li>
+               
+                <div>
+                  <h3><u>Online Courses</u></h3>
+                  <p>We offer a variety of online courses in subjects such as math, science and computer languages.</p>
+                </div>
+              </li>
+              <li>
+                
+                <div>
+                  <h3><u>Tutoring Services</u></h3>
+                  <p>We provide one-on-one and group tutoring services for students who need extra help with their studies.</p>
+                </div>
+              </li>
+              <li>
+             
+                <div>
+                  <h3><u>Learning Resources</u></h3>
+                  <p>We offer a wide range of learning resources, including textbooks, study guides, and interactive tutorials.</p>
+                </div>
+              </li>
+              <li>
+               
+                <div>
+                  <h3><u>Career Guidance</u></h3>
+                  <p>We provide career guidance and resources to help students explore different career paths and prepare for the workforce.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+    </body>
+</html>
